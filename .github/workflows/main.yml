@@ -1,0 +1,18 @@
+name: Mitt Första Workflow
+
+# 1. TRIGGER: När ska detta hända?
+on: [push]
+
+# 2. JOBS: Vad ska hända?
+jobs:
+  min-häftiga-jobb-del:
+    # 3. RUNNER: Vilken dator ska vi låna?
+    runs-on: ubuntu-latest
+
+    # 4. STEPS: Instruktionerna
+    steps:
+      - name: Säg hej
+        run: echo "Hej Världen! Nu kör vi GitHub Actions!"
+
+      - name: Visa vilken mapp vi är i
+        run: pwd
